@@ -22,6 +22,7 @@ public class OrdenarSort {
             array[i] = aux;
         }
         return array;
+        
     }
     public void printArreglo (int[] array){
         for (Object elem : array) {
