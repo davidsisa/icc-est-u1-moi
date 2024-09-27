@@ -5,6 +5,7 @@ public class OrdenarSort {
         for (int i = 0; i < tamanio; i++) {
             int indice = i;
             for (int j = i+1; j < tamanio; j++) {
+                //Cambiar orden
                 if (orden == true){
                     if (array[j] < array[indice]){
                         indice = j;
@@ -22,7 +23,7 @@ public class OrdenarSort {
             array[i] = aux;
         }
         return array;
-        
+
     }
     public void printArreglo (int[] array){
         for (Object elem : array) {
