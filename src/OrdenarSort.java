@@ -5,7 +5,7 @@ public class OrdenarSort {
         for (int i = 0; i < tamanio; i++) {
             int indice = i;
             for (int j = i+1; j < tamanio; j++) {
-                if (array[j] > array[indice]){
+                if (array[j] < array[indice]){
                     indice = j;
                 }
             }
