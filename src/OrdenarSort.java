@@ -1,12 +1,18 @@
 public class OrdenarSort {
-    public int[] sortBySeleccion(int[] array){
-        int tamanio = array.length;
+    public int[] sortBySeleccion(int[] array,boolean orden){
+        int tamanio = array.length; 
         //recorrer arreglo
         for (int i = 0; i < tamanio; i++) {
             int indice = i;
             for (int j = i+1; j < tamanio; j++) {
-                if (array[j] < array[indice]){
-                    indice = j;
+                if (orden == true){
+                    if (array[j] < array[indice]){
+                        indice = j;
+                    }
+                } else {
+                    if (array[j] > array[indice]){
+                        indice = j;
+                    }
                 }
             }
             //intercambiar del indice encontrado
